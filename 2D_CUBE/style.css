@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    position: relative;
+    color: #fff;
+    font-weight: 700;
+}
+
+.side {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    position: absolute;
+    line-height: 100px;
+}
+
+.top {
+    background: blue;
+    transform: rotate(-45deg) skew(15deg, 15deg);
+}
+
+.left {
+    background: green;
+    transform: rotate(15deg) skew(15deg, 15deg) translate(-50%, 100%);
+}
+
+.right {
+    background: red;
+    transform: rotate(-15deg) skew(-15deg, -15deg) translate(50%, 100%);
+}

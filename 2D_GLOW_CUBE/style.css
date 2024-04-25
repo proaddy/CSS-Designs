@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    position: relative;
+    color: #fff;
+    font-weight: 700;
+    background: #27282c
+}
+
+.side {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    position: absolute;
+    line-height: 100px;
+}
+
+.top {
+    background: aqua;
+    transform: rotate(-45deg) skew(15deg, 15deg);
+    box-shadow: 0 0 30px 5px blue inset;
+
+}
+
+.left {
+    background: aqua;
+    transform: rotate(15deg) skew(15deg, 15deg) translate(-50%, 100%);
+    box-shadow: 0 0 30px 5px blue inset;
+}
+
+.right {
+    background: aqua;
+    transform: rotate(-15deg) skew(-15deg, -15deg) translate(50%, 100%);
+    box-shadow: 0 0 30px 5px blue inset;
+}
+
+.shadow {
+    background: aqua;
+    transform: rotate(-45deg) skew(15deg, 15deg) translate(-160%, 160%);
+    box-shadow: 0 0 80px 10px blue;
+    filter: blur(20px);
+    z-index: -1;
+}
